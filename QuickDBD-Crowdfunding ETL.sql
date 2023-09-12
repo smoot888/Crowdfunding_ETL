@@ -26,7 +26,11 @@ CREATE TABLE "campaign" (
 CREATE TABLE "contacts" (
     "contact_id" int   NOT NULL,
     "first_name" varchar(50)   NOT NULL,
-    "last_name" varchar(50)   NOT NULL
+    "last_name" varchar(50)   NOT NULL,
+    "email" varchar(150)    NOT NULL
+    CONSTRAINT "pk_contacts" PRIMARY KEY (
+        "contact_id"
+     )
 );
 
 CREATE TABLE "categories" (
